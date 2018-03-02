@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wahid.c5b.RoutinActivity">
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:entries="@array/days"
+        android:prompt="@string/prompt">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginStart="50sp"
+        android:layout_marginBottom="25sp"
+        android:layout_marginTop="80sp"
+        android:text="31"
+        android:textColor="#fff"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/month"
+        android:layout_toRightOf="@+id/date"
+        android:layout_toEndOf="@id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80sp"
+        android:text="April"
+        android:textColor="#000"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_toRightOf="@id/month"
+        android:layout_toEndOf="@id/month"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80sp"
+        android:text="2018"
+        android:textColor="#000"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="SUNDAY"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/horizontalD"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/date"
+        android:background="#000"/>
+
+    <TextView
+        android:id="@+id/verticalD"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/month"
+        android:layout_alignStart="@+id/month"
+        android:layout_below="@+id/horizontalD"
+        android:layout_alignTop="@id/horizontalD"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:background="#000" />
+    <TextView
+        android:id="@+id/time1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/horizontalD"
+        android:layout_alignRight="@id/verticalD"
+        android:layout_alignEnd="@id/verticalD"
+        android:layout_alignBottom="@id/horizontalD1"
+        android:text="11:30-12:30"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#000"
+        />
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/horizontalD"
+        android:layout_toRightOf="@id/verticalD"
+        android:layout_toEndOf="@id/verticalD"
+        android:layout_alignBottom="@id/horizontalD1"
+        android:text="MicroProcessor Lab"
+        android:textSize="20sp"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/horizontalD1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/horizontalD"
+        android:layout_marginTop="100sp"
+        android:background="#000" />
+    <TextView
+        android:id="@+id/time2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/horizontalD1"
+        android:layout_alignRight="@id/verticalD"
+        android:layout_alignEnd="@id/verticalD"
+        android:layout_alignBottom="@id/horizontalD2"
+        android:text="11:30-12:30"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#000"
+        />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/horizontalD1"
+        android:layout_toRightOf="@id/verticalD"
+        android:layout_toEndOf="@id/verticalD"
+        android:text=" "
+        android:layout_alignBottom="@id/horizontalD2"
+        android:textSize="20sp"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/horizontalD2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/horizontalD"
+        android:layout_marginTop="200sp"
+        android:background="#000" />
+    <TextView
+        android:id="@+id/time3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/horizontalD2"
+        android:layout_alignRight="@id/verticalD"
+        android:layout_alignEnd="@id/verticalD"
+        android:layout_alignBottom="@id/horizontalD3"
+        android:text="11:30-12:30"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#000"
+        />
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/horizontalD2"
+        android:layout_toRightOf="@id/verticalD"
+        android:layout_toEndOf="@id/verticalD"
+        android:layout_alignBottom="@id/horizontalD3"
+        android:text=" "
+        android:textSize="20sp"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/horizontalD3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/horizontalD"
+        android:layout_marginTop="300sp"
+        android:background="#000" />
+    <TextView
+        android:id="@+id/time4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/horizontalD3"
+        android:layout_alignRight="@id/verticalD"
+        android:layout_alignEnd="@id/verticalD"
+        android:layout_alignBottom="@id/horizontalD4"
+        android:text="11:30-12:30"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text3"
+        android:layout_alignLeft="@id/verticalD"
+        android:layout_alignStart="@id/verticalD"
+        android:layout_alignBottom="@id/horizontalD4"
+        android:text=" "
+        android:textSize="20sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/horizontalD4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/horizontalD"
+        android:layout_marginTop="400sp"
+        android:background="#000" />
+    <TextView
+        android:id="@+id/chill"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/horizontalD4"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#000"/>
+
+
+</RelativeLayout>
+
+</ScrollView>
